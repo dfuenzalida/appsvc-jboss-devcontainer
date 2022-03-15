@@ -4,7 +4,16 @@ This repo contains a containerized development environment for JBoss on App Serv
 
 ## Usage
 
-Launch JBoss by opening a new terminal and run the following command:
+Clone this repo and open it in Visual Studio Code. Once it opens, it should prompt you to open it in a container:
+
+```
+Folder contains a Dev Container configuration file.
+Reopen folder to develop in a container [Reopen in Container]
+```
+
+Allow the folder to be reopened. VS Code will create a self-contained environment which you can use during development. This will happen only once but it may take a few minutes depending on your internet connection. When asked, allow VS Code to install the recommended extensions.
+
+Once it finishes building the image, launch JBoss by opening a new terminal and run the following command:
 
 ```
 /bin/init_container.sh
