@@ -1,3 +1,4 @@
+<%@ page import="org.demo.Greeting" %>
 <html>
 
 <head>
@@ -49,15 +50,21 @@
                 </td>
             </tr>
             <tr>
+                <td>Host name</td>
+                <td>
+                    <%= System.getenv("HOSTNAME") %>
+                </td>
+            </tr>
+            <tr>
                 <td>Current Date</td>
                 <td>
                     <%= new java.util.Date() %>
                 </td>
             </tr>
             <tr>
-                <td>Host name</td>
+                <td>Greeting</td>
                 <td>
-                    <%= System.getenv("HOSTNAME") %>
+                    <%= org.demo.Greeting.greet("World") %>
                 </td>
             </tr>
         </tbody>

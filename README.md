@@ -27,8 +27,12 @@ View/Edit the code in `src/main/webapp/index.jsp` and when ready to deploy local
 mvn clean package wildfly:deploy
 ```
 
-Reload the webpage at http://localhost/ and see the landing page replaced with the application you just edited.
+Reload the webpage at [http://localhost/](http://localhost/) and see the landing page replaced with the application you just edited.
 
-## Configuration
+## Debugging
 
-Edit `devcontainer.json` to change the port forwarding settings if you need to use a port other than 80 in your development environment.
+This project uses the `DEBUG` environment variable to allow connecting a debugger to JBoss.
+
+Once you run the script `/bin/init_container.sh`, use the **Run and Debug** view to attach the debugger to JBoss.
+
+If you deploy the project as detailed above, you can set breakpoints in the code at `Greeting.java` and it will stop on them once you load the page at [http://localhost](http://localhost/)
