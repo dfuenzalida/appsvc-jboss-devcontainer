@@ -1,6 +1,6 @@
 # JBoss Dev Container environment
 
-This repo contains a containerized development environment for JBoss on App Service
+This repo contains a containerized development environment for JBoss on [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/)
 
 ## Usage
 
@@ -33,6 +33,6 @@ Reload the webpage at [http://localhost/](http://localhost/) and see the landing
 
 This project uses the `DEBUG` environment variable to allow connecting a debugger to JBoss.
 
-Once you run the script `/bin/init_container.sh`, use the **Run and Debug** view to attach the debugger to JBoss.
+Once you run the script `/bin/init_container.sh`, use the **Run and Debug** view in VS Code to attach the debugger to JBoss.
 
 If you deploy the project as detailed above, you can set breakpoints in the code at `Greeting.java` and it will stop on them once you load the page at [http://localhost](http://localhost/)
